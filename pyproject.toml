@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "django-batch-example"
+version = "0.1.0"
+description = ""
+authors = ["otajisan <mtaji@morningcode.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.4"
+structlog = "^24.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
