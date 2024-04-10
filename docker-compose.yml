@@ -1,0 +1,9 @@
+version: '3'
+services:
+  django-batch-example:
+    image: django-batch-example:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DJANGO_SETTINGS_MODULE=django_batch_example.settings_dev

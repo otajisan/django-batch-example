@@ -12,10 +12,10 @@ class Command(BaseCommand):
         super().__init__()
 
     def handle(self, *args, **options):
-      logger.info(f'args: ${args}')
-      logger.info(f'options: ${options}')
+      logger.info(f'args: {args}')
+      logger.info(f'options: {options}')
       name = options['name']
-      logger.info(f'Hello ${name} !!')
+      logger.info(f'Hello {name} !!')
 
     def add_arguments(self, parser):
         parser.add_argument('--name', nargs='?', default='', type=str)
